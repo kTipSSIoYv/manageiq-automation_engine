@@ -11,6 +11,10 @@ module MiqAeServiceMiqRequestMixin
     object_send(:get_option_last, key)
   end
 
+  def get_option_array(key)
+    object_send(:get_option_array, key)
+  end 
+  
   def user_message=(msg)
     object_send('user_message=', msg)
   end
